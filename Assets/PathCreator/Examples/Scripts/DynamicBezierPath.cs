@@ -11,11 +11,12 @@ namespace PathCreation.Examples {
         public bool closedLoop = false;  // We don't want a closed loop for endless generation.
         public Transform[] waypoints;
         private BezierPath bezierPath;
+        public GameObject holder;
         public float dynamicXPos;
         public float dynamicYPos;
         
 
-        public Transform player; // Reference to the player or object moving along the path.
+       
 
         void Start ()
         {
@@ -31,13 +32,15 @@ namespace PathCreation.Examples {
         void Update () 
         {
             // Check if the player passed the second point
+            //TODO: change this to camera pos as I want the  old part of the path destroy\get back to the pool after its behind the camera...
+            
             if (_pathFollower.PlayerPassedSecondPoint())
             {
                 // Remove the first point and add a new one after the last point.
                 UpdatePath();
                 
                 // Notify the path follower that the path has changed
-               // _pathFollower.OnPathChanged();
+                _pathFollower.OnPathChanged();
             }
         }
 
@@ -69,11 +72,13 @@ namespace PathCreation.Examples {
         void AddNewWaypoint() {
             // Generate a new position for the next point.
             Vector3 lastPointPosition = waypoints[waypoints.Length - 2].position;
-            Vector3 newPointPosition = lastPointPosition + new Vector3(Random.Range(-1*dynamicXPos, dynamicXPos), Random.Range(-1*dynamicYPos, dynamicYPos), 5f+Random.Range(0, 10f)); 
+            Vector3 newPointPosition = lastPointPosition + new Vector3(Random.Range(-1*dynamicXPos, dynamicXPos),
+                Random.Range(-1*dynamicYPos, dynamicYPos), 5f+Random.Range(0, 10f)); 
             
             // Create a new GameObject for the new waypoint and set its position
             GameObject newWaypoint = new GameObject("NewWaypoint");
             newWaypoint.transform.position = newPointPosition;
+            newWaypoint.transform.parent = holder.transform;
 
             // Add the new waypoint to the end of the waypoints array
             waypoints[waypoints.Length - 1] = newWaypoint.transform;
