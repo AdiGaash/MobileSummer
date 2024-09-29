@@ -33,6 +33,6 @@ public class CameraCaptureToTexture : MonoBehaviour
 
         // Step 7: Release and destroy the temporary RenderTexture to free up memory
         renderTexture.Release();
-        Destroy(renderTexture);
+       
     }
 }

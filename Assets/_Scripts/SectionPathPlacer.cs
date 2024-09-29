@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace PathCreation.Examples
 {
-    [ExecuteInEditMode]
+    //[ExecuteInEditMode]
     public class SectionPathPlacer : MonoBehaviour
     {
         public PathCreator pathCreator;
-        public ObjectPool objectPool; // Reference to the object pool
+        public ObsticlePoolManager objectPool; // Reference to the object pool
         public GameObject holder;
-        public GameObject prefab;
+        
         
 
         const float minSpacing = .1f;
@@ -17,7 +17,7 @@ namespace PathCreation.Examples
         // Public Generate method that accepts start and end percentage for path placement
         public void Generate(float startDistance, float endDistance, float spacing) 
         {
-            if (pathCreator != null && prefab != null && holder != null) 
+            if (pathCreator != null && holder != null) 
             {
                 RemoveObjects(); // Use object pool to deactivate objects instead of destroying them.
 
@@ -32,7 +32,9 @@ namespace PathCreation.Examples
                     Quaternion rot = path.GetRotationAtDistance(dst);
 
                     // Use the object pool to get an object instead of instantiating it
-                    GameObject obj = objectPool.GetObject(point, rot);
+                    GameObject obj = objectPool.Get();
+                    obj.transform.position = point;
+                    obj.transform.rotation = rot;
                     obj.transform.SetParent(holder.transform); // Parent it to the holder
 
                     dst += spacing;
@@ -47,7 +49,7 @@ namespace PathCreation.Examples
             for (int i = numChildren - 1; i >= 0; i--) 
             {
                 GameObject obj = holder.transform.GetChild(i).gameObject;
-                objectPool.ReturnObject(obj); // Return object to the pool (deactivate it)
+                objectPool.ReturnToPool(obj); // Return object to the pool (deactivate it)
             }
         }
     }

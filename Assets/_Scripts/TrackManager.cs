@@ -83,6 +83,7 @@ public class TrackManager : MonoBehaviour
     }
 
     // Reposition the track part to the position of the last repositioned track + spacing
+    
     void RepositionTrack(GameObject trackPart)
     {
         // Calculate the new Z position
@@ -94,6 +95,8 @@ public class TrackManager : MonoBehaviour
             trackPart.transform.position.y,
             newZPosition
         );
+        
+        // put obstacles on the track after reposition (using pools) 
 
         // Debugging to check repositioning
         Debug.Log($"Repositioned {trackPart.name} to Z: {newZPosition}");
