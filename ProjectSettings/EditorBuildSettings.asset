@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: c8fbf06f8afed68478ecb8038c9ef741
+  - enabled: 1
+    path: Assets/Scenes/LevelLoadingAsync.unity
+    guid: c092d489a35004046b4d712e3207fca9
+  - enabled: 1
+    path: Assets/Road props for games/Demo/Demo.unity
+    guid: cc3d84f0e15d55f43ba177811c2642f1
   m_configObjects: {}
