@@ -38,6 +38,7 @@ namespace PathCreation.Examples {
             bezierPath = new BezierPath(waypoints, closedLoop, PathSpace.xyz);
             GetComponent<PathCreator>().bezierPath = bezierPath;
             
+            
 
             Debug.Log("points: " + bezierPath.NumPoints);
             

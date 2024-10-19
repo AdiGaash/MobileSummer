@@ -4,9 +4,9 @@ public class TweenObjectLerpOnOrientationChange : MonoBehaviour
 {
     // Public transforms for target positions for each orientation
     public Transform portraitPosition;
-    public Transform landscapeLeftPosition;
-    public Transform landscapeRightPosition;
-    public Transform portraitUpsideDownPosition;
+    public Transform landscapePosition;
+   
+    
 
     // Store the current orientation
     private ScreenOrientation currentOrientation;
@@ -27,7 +27,8 @@ public class TweenObjectLerpOnOrientationChange : MonoBehaviour
     {
         // Initialize the current orientation
         currentOrientation = Screen.orientation;
-        targetPosition = objectToMove.transform.position;  // Initial target is current position
+        SetNewTargetPosition(currentOrientation);
+       
     }
 
     void Update()
@@ -39,6 +40,7 @@ public class TweenObjectLerpOnOrientationChange : MonoBehaviour
             currentOrientation = Screen.orientation;
             // Set the new target position based on the orientation
             SetNewTargetPosition(currentOrientation);
+            Debug.Log("update UI element positions");
         }
 
         // Move the object towards the target position using Lerp if it's moving
@@ -60,35 +62,23 @@ public class TweenObjectLerpOnOrientationChange : MonoBehaviour
         switch (newOrientation)
         {
             case ScreenOrientation.Portrait:
-                if (portraitPosition != null)
-                {
                     targetPosition = portraitPosition.position;
                     isMoving = true;
-                }
                 break;
 
             case ScreenOrientation.LandscapeLeft:
-                if (landscapeLeftPosition != null)
-                {
-                    targetPosition = landscapeLeftPosition.position;
+                    targetPosition = landscapePosition.position;
                     isMoving = true;
-                }
                 break;
 
             case ScreenOrientation.LandscapeRight:
-                if (landscapeRightPosition != null)
-                {
-                    targetPosition = landscapeRightPosition.position;
+                    targetPosition = landscapePosition.position;
                     isMoving = true;
-                }
                 break;
 
             case ScreenOrientation.PortraitUpsideDown:
-                if (portraitUpsideDownPosition != null)
-                {
-                    targetPosition = portraitUpsideDownPosition.position;
+                    targetPosition = portraitPosition.position;
                     isMoving = true;
-                }
                 break;
 
             default:
