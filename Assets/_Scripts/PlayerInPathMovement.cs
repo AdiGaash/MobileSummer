@@ -82,14 +82,17 @@ public class PlayerInPathMovement : MonoBehaviour
         // Example using arrow keys
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
+            Debug.Log("left");
             MoveLeft();
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
+            Debug.Log("right");
             MoveRight();
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
+            Debug.Log("up");
             Jump();
         }
     }
@@ -100,13 +103,15 @@ public class PlayerInPathMovement : MonoBehaviour
         if (currentPosition == PlayerPosition.Center)
         {
             targetPosition = PlayerPosition.Left;
+            StartMoving();
         }
         else if (currentPosition == PlayerPosition.Right)
         {
             targetPosition = PlayerPosition.Center;
+            StartMoving();
         }
 
-        StartMoving();
+        
     }
 
     // Move player to the right in local space if possible
@@ -115,13 +120,13 @@ public class PlayerInPathMovement : MonoBehaviour
         if (currentPosition == PlayerPosition.Center)
         {
             targetPosition = PlayerPosition.Right;
+            StartMoving();
         }
         else if (currentPosition == PlayerPosition.Left)
         {
             targetPosition = PlayerPosition.Center;
+            StartMoving();
         }
-
-        StartMoving();
     }
 
     // Jump to the upper position and come back down after a short delay
