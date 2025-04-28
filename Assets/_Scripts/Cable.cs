@@ -28,7 +28,7 @@ public class Cable : MonoBehaviour
             segments[i] = Instantiate(segmentPrefab, segmentPosition, Quaternion.identity);
             Rigidbody rb = segments[i].AddComponent<Rigidbody>();
             rb.mass = 0.001f;
-            rb.angularDrag = 0;
+            rb.angularDamping = 0;
             rb.useGravity = false;
             
             
