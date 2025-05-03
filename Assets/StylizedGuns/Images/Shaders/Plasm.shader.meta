@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0f1f885562f2827489f95380b015edbf
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Images/Shaders/Plasm.shader
+  uploadId: 531400

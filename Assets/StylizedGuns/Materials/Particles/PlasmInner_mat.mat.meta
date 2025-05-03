@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6d8aadfde788fe146b408c1031f672a1
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Materials/Particles/PlasmInner_mat.mat
+  uploadId: 531400

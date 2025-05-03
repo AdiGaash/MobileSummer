@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 10f9ac8d75cfb7d45acde7eef1fd9c61
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Animations/LightPistol.controller
+  uploadId: 531400

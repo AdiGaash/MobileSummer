@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9d3ef80ae236bd141b675973ce0a0aaf
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Materials/Particles/Plasm_mat.mat
+  uploadId: 531400

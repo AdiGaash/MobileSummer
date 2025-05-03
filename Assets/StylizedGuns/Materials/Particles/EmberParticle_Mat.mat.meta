@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 37e5668b840424a478005c11eda6aed7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Materials/Particles/EmberParticle_Mat.mat
+  uploadId: 531400

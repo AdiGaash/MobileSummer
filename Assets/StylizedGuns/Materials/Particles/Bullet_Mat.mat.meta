@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 76246a8446deb7542992e97c175c8228
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Materials/Particles/Bullet_Mat.mat
+  uploadId: 531400

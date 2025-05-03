@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a92941620d7cefc41a9622c861eea0c1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Prefabs/ShotGun.prefab
+  uploadId: 531400

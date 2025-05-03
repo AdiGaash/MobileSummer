@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 63cc2eff4e9161c43a40c09b58bd1244
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Animations/Idle.anim
+  uploadId: 531400

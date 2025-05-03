@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 473bd586f493ac74fae126a8727d465c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 13400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Materials/NoFriction.physicMaterial
+  uploadId: 531400

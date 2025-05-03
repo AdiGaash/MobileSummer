@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7a19a07eea2063a498ba8acf9989bf6a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Prefabs/ShotGunPickUp.prefab
+  uploadId: 531400

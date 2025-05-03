@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 472b4569fb3aa294fb9d295973a7f0c8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Prefabs/Bullet.prefab
+  uploadId: 531400

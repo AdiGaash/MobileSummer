@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1e319a99dde5c1c4d97e3e628b87621d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Materials/Particles/AdditiveBase_Mat.mat
+  uploadId: 531400

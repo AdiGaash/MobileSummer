@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 92e6c761b46794b42859ac79a6e666e2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Animations/MachineGun.controller
+  uploadId: 531400

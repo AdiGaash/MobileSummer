@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d85cf374425d9c44181d5a1ff43c5816
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Scripts/CameraController.cs
+  uploadId: 531400

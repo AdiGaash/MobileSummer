@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: bd97489ee56cfc44b85edba0263aca17
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Scripts/ShootControl.cs
+  uploadId: 531400

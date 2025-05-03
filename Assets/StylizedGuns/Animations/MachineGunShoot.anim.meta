@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6eb23c2e1b9a1dc4a9a6815f511b783c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Animations/MachineGunShoot.anim
+  uploadId: 531400

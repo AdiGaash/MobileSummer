@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2d32aa86b57e69d43a8e020bc4c7deb6
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Images/Shaders/Ember.shader
+  uploadId: 531400

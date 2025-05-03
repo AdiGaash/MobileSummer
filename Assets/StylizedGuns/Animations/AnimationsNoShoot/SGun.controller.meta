@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c7b408eb1314e024ba8a0651b76f613a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Animations/AnimationsNoShoot/SGun.controller
+  uploadId: 531400

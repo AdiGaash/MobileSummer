@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8df9a20fd64c7234f866adb1428f105f
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Images/Shaders/PowerCable.shader
+  uploadId: 531400

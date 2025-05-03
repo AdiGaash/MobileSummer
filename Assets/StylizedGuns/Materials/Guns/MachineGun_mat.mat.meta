@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f084b7f6e230dba4bac1347ef4c0100e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Materials/Guns/MachineGun_mat.mat
+  uploadId: 531400

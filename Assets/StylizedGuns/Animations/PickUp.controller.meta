@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aa87b8aca93c0424a89d33fdb7788f09
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Animations/PickUp.controller
+  uploadId: 531400

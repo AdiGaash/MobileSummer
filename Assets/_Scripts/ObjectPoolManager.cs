@@ -68,7 +68,6 @@ public class ObjectPoolManager : MonoBehaviour
         {
             objectPools[poolKey] = new Queue<GameObject>();
         }
-
         objectPools[poolKey].Enqueue(obj);
     }
 }

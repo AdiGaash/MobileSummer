@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3ec72e6e6ac64a24aa1efc9dcfd36a72
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Prefabs/GunBaseMachineGun.prefab
+  uploadId: 531400

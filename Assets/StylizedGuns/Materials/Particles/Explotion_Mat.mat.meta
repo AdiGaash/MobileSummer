@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 48559fffe2a05b64dacf3f1187715d61
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Materials/Particles/Explotion_Mat.mat
+  uploadId: 531400

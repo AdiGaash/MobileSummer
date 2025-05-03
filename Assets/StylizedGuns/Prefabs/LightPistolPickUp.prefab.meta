@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ef96cc3b110f96243abd5784f5aaa128
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Prefabs/LightPistolPickUp.prefab
+  uploadId: 531400

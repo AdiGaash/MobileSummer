@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cb89eca91eac751479dcf69ea6ab4a4a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Animations/AnimationsNoShoot/LightPistolShoot.anim
+  uploadId: 531400

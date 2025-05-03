@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 866ec4be61fd3514dae06688b8d84b9c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233145
+  packageName: Stylized Guns Pack
+  packageVersion: 1.0
+  assetPath: Assets/StylizedGuns/Scripts/MoveCamera.cs
+  uploadId: 531400
