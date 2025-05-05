@@ -3,8 +3,9 @@
 public class PlayerMovement : MonoBehaviour
 {
     // Variables to control the player's speed
-    public float moveSpeed = 5f;
-    
+    float moveSpeed;
+
+    public ShipParameters ShipParameters;
     // Rigidbody component for physics-based movement
     private Rigidbody rb;
 
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        
         // Get the Rigidbody component attached to the player object
         rb = GetComponent<Rigidbody>();
     }
@@ -27,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        moveSpeed = ShipParameters.Speed;
         // Apply movement based on input and speed
         Vector3 movement = new Vector3(moveX, 0f, moveZ) * moveSpeed * Time.deltaTime;
         
