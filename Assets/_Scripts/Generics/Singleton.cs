@@ -2,21 +2,14 @@
 
 public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
-    // The static instance of the singleton
     private static T _instance;
-
-    // Lock for thread safety if needed
     private static readonly object _lock = new object();
-
-    // Flag to track if the application is shutting down
     private static bool applicationIsQuitting = false;
 
-    // Public property to access the singleton instance
     public static T Instance
     {
         get
         {
-            // If the application is quitting, return null
             if (applicationIsQuitting)
             {
                 Debug.LogWarning("[Singleton] Instance '" + typeof(T) +
@@ -26,34 +19,49 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 
             lock (_lock)
             {
-                // If instance is null, try to find it in the scene
                 if (_instance == null)
                 {
                     _instance = (T)FindObjectOfType(typeof(T));
 
-                    // If it's still null, create a new game object and attach the singleton component
                     if (_instance == null)
                     {
                         GameObject singletonObject = new GameObject();
                         _instance = singletonObject.AddComponent<T>();
                         singletonObject.name = typeof(T).ToString() + " (Singleton)";
-
-                        // Make the object persistent across scenes
-                        DontDestroyOnLoad(singletonObject);
                     }
+                    else
+                    {
+                        // If the instance already exists in the scene, make sure we're using the same object
+                        _instance = _instance.GetComponent<T>();
+                    }
+
+                    
                 }
+                
                 return _instance;
             }
         }
     }
 
-    // Called when the application quits, to prevent creating a new instance
+    protected virtual void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this as T;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (_instance != this)
+        {
+            Debug.LogWarning($"[Singleton] Another instance of {typeof(T)} already exists! Destroying this one.");
+            Destroy(gameObject);
+        }
+    }
+
     private void OnApplicationQuit()
     {
         applicationIsQuitting = true;
     }
 
-    // Called when the singleton object is destroyed
     private void OnDestroy()
     {
         applicationIsQuitting = true;
