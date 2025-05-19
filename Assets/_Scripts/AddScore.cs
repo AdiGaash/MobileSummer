@@ -5,6 +5,7 @@ public class AddScore : MonoBehaviour
     
     public void ClickAddScore()
     {
+        
         GameManager.Instance.AddScore(10);
     }
     

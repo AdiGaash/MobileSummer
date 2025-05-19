@@ -18,7 +18,6 @@ public class JsonSaver
     {
         // Convert the object to JSON format
         string json = JsonUtility.ToJson(data, true); // 'true' makes the output human-readable
-        
         // Create a file path (this saves the file in the persistent data path of the game)
         string path = Path.Combine(Application.persistentDataPath, fileName + ".json");
 
