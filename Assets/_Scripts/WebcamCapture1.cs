@@ -16,9 +16,9 @@ public class WebcamCapture1 : MonoBehaviour
         
         // Start the webcam
         webCamTexture.Play();
-        
-       
     }
+
+    
 
     
 

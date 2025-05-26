@@ -13,7 +13,7 @@ public class JsonSaverWithNewtonsoft
 
         // Create a file path (this saves the file in the persistent data path of the game)
         string path = Path.Combine(Application.persistentDataPath, fileName + ".json");
-
+        
         // Write the JSON data to a file
         File.WriteAllText(path, json);
         

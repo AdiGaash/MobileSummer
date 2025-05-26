@@ -4,7 +4,7 @@ using UnityEngine;
 using Newtonsoft.Json;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using YourNamespace; // Replace with actual namespace containing SaveGameDataManager
+
 
 public class SavedGameListLoader : MonoBehaviour
 {
@@ -28,9 +28,7 @@ public class SavedGameListLoader : MonoBehaviour
         }
         
         List<SaveGameInfo> savedGames = LoadSavedGamesList();
-
         
-
         foreach (var saveGameInfo in savedGames)
         {
             GameObject buttonGameObject = Instantiate(SavedGameButtonPrefab, SavedGameListContainer);
@@ -48,7 +46,7 @@ public class SavedGameListLoader : MonoBehaviour
 
     private void OnSavedGameButtonClick(SaveGameInfo saveGameInfo)
     {
-        // what to do when the button is clicked!
+        
     }
 
     private List<SaveGameInfo> LoadSavedGamesList()
