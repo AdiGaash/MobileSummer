@@ -21,7 +21,7 @@ public class JsonListSaver
         Debug.Log("List of data saved as JSON to: " + path); // For debugging purposes
     }
 
-    // Wrapper class to serialize a list using JsonUtility (which doesn’t directly support lists)
+    // Wrapper class to serialize a list using JsonUtility - as it doesn’t directly support lists!
     [System.Serializable]
     private class GameDataListWrapper
     {
