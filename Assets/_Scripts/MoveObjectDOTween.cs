@@ -11,5 +11,6 @@ public class MoveObjectDOTween : MonoBehaviour
     {
         // Move the object to the target position over the duration
         transform.DOMove(targetPosition, duration);
+        
     }
 }

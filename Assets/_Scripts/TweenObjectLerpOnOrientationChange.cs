@@ -46,7 +46,7 @@ public class TweenObjectLerpOnOrientationChange : MonoBehaviour
         // Move the object towards the target position using Lerp if it's moving
         if (isMoving)
         {
-            objectToMove.transform.position = Vector3.Lerp(objectToMove.transform.position, targetPosition, Time.deltaTime * moveSpeed);
+            objectToMove.transform.position = Vector3.Slerp(objectToMove.transform.position, targetPosition, Time.deltaTime * moveSpeed);
 
             // Check if the object is close enough to the target to stop moving
             if (Vector3.Distance(objectToMove.transform.position, targetPosition) < 0.01f)

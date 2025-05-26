@@ -48,8 +48,6 @@ public class CameraScreenCapture : MonoBehaviour
         
         ImageHandler.SaveImage(screenshot, "camera_capture.png");
         
-        
-        
         // Clean up
         Destroy(screenshot);
         Destroy(renderTexture);

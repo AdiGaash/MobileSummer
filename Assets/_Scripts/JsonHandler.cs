@@ -34,11 +34,8 @@ public class JsonHandler
         }
     }
     
-    
-}
-{
     // This function will save the object as a JSON file
-    public void SaveGameData(GameData data, string fileName)
+    void SaveGameData(GameData data, string fileName)
     {
         // Convert the object to JSON format
         string json = JsonUtility.ToJson(data, true); // 'true' makes the output human-readable
@@ -51,6 +48,9 @@ public class JsonHandler
         Debug.Log("Data saved as JSON to: " + path); // For debugging purposes
     }
 }
+
+    
+
 
 
 public class ExampleJsonSaver
@@ -66,9 +66,9 @@ public class ExampleJsonSaver
         };
 
         // Create an instance of the JsonSaver class
-        JsonSaver saver = new JsonSaver();
+        //JsonSaver saver = new JsonSaver();
 
         // Save the game data as JSON, file will be named "SaveFile.json"
-        saver.SaveGameData(newGameData, "SaveFile");
+        //saver.SaveGameData(newGameData, "SaveFile");
     }
 }
