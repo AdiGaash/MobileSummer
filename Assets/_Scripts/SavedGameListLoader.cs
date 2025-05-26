@@ -40,7 +40,7 @@ public class SavedGameListLoader : MonoBehaviour
             buttonGameObject.GetComponentInChildren<UnityEngine.UI.Text>().text = displayText;
             // Use a lambda to pass the parameter
             buttonGameObject.GetComponent<Button>().onClick.AddListener(() => OnSavedGameButtonClick(saveGameInfo));
-
+            buttonGameObject.GetComponent<Button>().onClick.AddListener();
         }
     }
 

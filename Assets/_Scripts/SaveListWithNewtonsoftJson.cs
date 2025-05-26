@@ -21,6 +21,27 @@ public class JsonSaverWithNewtonsoft
     }
 }
 
+ // Generic function to read a list of any type from JSON
+    public List<T> ReadJsonList<T>(string filePath)
+    {
+        try
+        {
+            // Read the JSON file content
+            string jsonContent = File.ReadAllText(filePath);
+            
+            // Deserialize the JSON to List<T>
+            List<T> items = JsonConvert.DeserializeObject<List<T>>(jsonContent);
+            
+            Debug.Log($"Successfully read {items.Count} items from {filePath}");
+            return items;
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"Error reading JSON file: {e.Message}");
+            return new List<T>();
+        }
+    }
+
 
 public class ExampleJsonSaverWithNewtonsoft
 {

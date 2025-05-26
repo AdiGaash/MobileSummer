@@ -17,7 +17,6 @@ public class JsonListSaver
 
         // Write the JSON data to a file
         File.WriteAllText(path, json);
-        
         Debug.Log("List of data saved as JSON to: " + path); // For debugging purposes
     }
 
