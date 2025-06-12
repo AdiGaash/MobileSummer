@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
@@ -17,9 +18,10 @@ public class GameManager : Singleton<GameManager>
     {
         SceneManager.LoadScene(0);
     }
-    
-    
-    
-    
-    
+
+
+    private void OnApplicationPause(bool pauseStatus)
+    {
+        
+    }
 }

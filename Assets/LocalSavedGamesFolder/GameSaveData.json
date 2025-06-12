@@ -1,0 +1,37 @@
+﻿{
+  "savedGames": [
+    {
+      "saveName": "Quick Save 1",
+      "saveDate": "2025-06-09",
+      "saveTime": "14:30:22",
+      "playerLevel": 5,
+      "playerScore": 2500,
+      "playerPosition": "(-15.5, 1.0, 23.8)",
+      "playerInventory": "Sword,HealthPotion,Shield,Map",
+      "nameOfScene": "DungeonLevel1",
+      "screenShotPath": "Screenshots/save_20250609_143022.png"
+    },
+    {
+      "saveName": "Boss Battle",
+      "saveDate": "2025-06-09",
+      "saveTime": "16:45:10",
+      "playerLevel": 8,
+      "playerScore": 5750,
+      "playerPosition": "(45.2, 2.0, -12.4)",
+      "playerInventory": "EnchantedSword,ManaPotion,DragonShield,BossKey",
+      "nameOfScene": "DragonLair",
+      "screenShotPath": "Screenshots/save_20250609_164510.png"
+    },
+    {
+      "saveName": "Village Save",
+      "saveDate": "2025-06-09",
+      "saveTime": "12:15:33",
+      "playerLevel": 3,
+      "playerScore": 1200,
+      "playerPosition": "(2.0, 0.0, 5.0)",
+      "playerInventory": "WoodenSword,Bread,BasicShield",
+      "nameOfScene": "PeacefulVillage",
+      "screenShotPath": "Screenshots/save_20250609_121533.png"
+    }
+  ]
+}

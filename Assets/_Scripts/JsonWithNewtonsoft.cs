@@ -3,10 +3,10 @@ using System.IO; // For file operations
 using UnityEngine; // For Application.persistentDataPath
 using Newtonsoft.Json; // For JSON serialization and deserialization
 
-public class JsonSaverWithNewtonsoft
+public static class JsonWithNewtonsoft
 {
     // This function will save a list of GameData objects as a JSON file
-    public void SaveGameDataList(List<GameData> dataList, string fileName)
+    public static void SaveGameDataList(List<GameData> dataList, string fileName)
     {
         // Convert the list of objects directly to JSON format using Newtonsoft.Json
         string json = JsonConvert.SerializeObject(dataList, Formatting.Indented); // 'Indented' makes the output human-readable
@@ -19,10 +19,9 @@ public class JsonSaverWithNewtonsoft
         
         Debug.Log("List of data saved as JSON to: " + path); // For debugging purposes
     }
-}
-
- // Generic function to read a list of any type from JSON
-    public List<T> ReadJsonList<T>(string filePath)
+    
+    // Generic function to read a list of any type from JSON
+    public static List<T> ReadJsonList<T>(string filePath)
     {
         try
         {
@@ -41,24 +40,8 @@ public class JsonSaverWithNewtonsoft
             return new List<T>();
         }
     }
-
-
-public class ExampleJsonSaverWithNewtonsoft
-{
-    public void SaveExampleList()
-    {
-        // Create a list of GameData objects and populate it with example data
-        List<GameData> gameDataList = new List<GameData>
-        {
-            new GameData { playerName = "PlayerOne", score = 1500, playTime = 25.5f },
-            new GameData { playerName = "PlayerTwo", score = 2300, playTime = 18.75f },
-            new GameData { playerName = "PlayerThree", score = 1000, playTime = 35.0f }
-        };
-
-        // Create an instance of the JsonSaverWithNewtonsoft class
-        JsonSaverWithNewtonsoft saver = new JsonSaverWithNewtonsoft();
-
-        // Save the list of game data as JSON, file will be named "GameDataList.json"
-        saver.SaveGameDataList(gameDataList, "GameDataList");
-    }
 }
+
+ 
+
+
