@@ -15,6 +15,9 @@ public class StarMovmentManager : MonoBehaviour
     [SerializeField] private float maxRaycastDistance = 100f;
     [SerializeField] private float faceDownThreshold = 0.8f; // Threshold for detecting face-down orientation
     
+    
+    private readonly string interactiveObjectsDataFileName = "interactive_objects_data.json";
+
     private GameObject selectedObject;
     private List<Vector3> drawnPath = new List<Vector3>();
     private bool isDrawing = false;
@@ -234,11 +237,7 @@ public class StarMovmentManager : MonoBehaviour
         }
     }
     
-    // Method to get object data for external access if needed
-    public List<InteractiveObjectData> GetAllInteractiveObjectsData()
-    {
-        return new List<InteractiveObjectData>(allInteractiveObjectsData);
-    }
+   
     
     private void SelectObject(Vector2 touchPosition)
     {
@@ -364,7 +363,7 @@ public class StarMovmentManager : MonoBehaviour
         string json = JsonUtility.ToJson(wrapper, true); // true for pretty print
 
         // Define the path for the JSON file (in persistent data path)
-        string filePath = Path.Combine(Application.persistentDataPath, "interactive_objects_data.json");
+        string filePath = Path.Combine(Application.persistentDataPath, interactiveObjectsDataFileName);
 
         // Write to file
         File.WriteAllText(filePath, json);
@@ -374,7 +373,7 @@ public class StarMovmentManager : MonoBehaviour
     
     public void LoadInteractiveObjectsFromJson()
     {
-        string filePath = Path.Combine(Application.persistentDataPath, "interactive_objects_data.json");
+        string filePath = Path.Combine(Application.persistentDataPath, interactiveObjectsDataFileName);
         
         if (File.Exists(filePath))
         {
